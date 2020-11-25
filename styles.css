@@ -88,6 +88,11 @@ h4{
 }
 
 .site-header{
+    background: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio{
     background-image: url(img/header.jpg);
     background-position: center center;
     background-size: cover;
@@ -148,6 +153,7 @@ h4{
     border: 1px solid #ccc;
     background-color: #f0f0f0;
     flex-basis: calc(33.3% - 1rem);
+    margin-bottom: 2rem;
 }
 
 .anuncio h4,
@@ -164,6 +170,8 @@ h4{
     display: flex;
     justify-content: space-evenly;
     padding: 0px;
+    flex: 1;
+    max-width: 500px;
 }
 
 .icono-caracteristica li{
@@ -192,7 +200,7 @@ h4{
 }
 
 .footer{
-    background-color: #4f4f4f;
+    background-color: #333333;
 }
 
 .footer p{
@@ -293,3 +301,32 @@ span{
     font-weight: 300;
 }
 
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.nosotros blockquote{
+    font-weight: 900;
+    margin: 0;
+    font-size: 2rem;
+    padding: 1rem 0 3rem 0;
+}
+
+.contenido-anuncio{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+}
+
+.contenido-centrado{
+    max-width: 800px;
+}
+
+.contenido-anuncio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

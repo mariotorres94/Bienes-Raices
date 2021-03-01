@@ -19,6 +19,10 @@ body{
     margin: 0 auto;
 }
 
+.contenedor p{
+    text-align: justify;
+}
+
 .seccion{
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -144,6 +148,10 @@ h4{
     text-transform: uppercase;
 }
 
+.icono p{
+    text-align: center;
+}
+
 .contenido-main{
     display: flex;
     justify-content: space-between;
@@ -169,7 +177,7 @@ h4{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    padding: 0px;
+    padding: 0;
     flex: 1;
     max-width: 500px;
 }
@@ -251,7 +259,8 @@ span{
 }
 
 .contenido-texto p{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    text-align: left;
 }
 
 .contenido-texto a{
@@ -260,12 +269,12 @@ span{
     color: #000000;
 }
 
-.contenido-texto h4{
+.contenido-texto h2{
     line-height: 1.4;
     margin: 0;
 }
 
-.contenido-texto h4::after{
+.contenido-texto h2::after{
     content: '';
     display: block;
     width: 15rem;
@@ -318,15 +327,58 @@ span{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: 1rem;
+    margin-right: -7rem;
 }
 
 .contenido-centrado{
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .contenido-anuncio{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.contacto{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.contacto p{
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+legend{
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+
+label{
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 1rem;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+textarea {
+    height: 20rem;
 }
